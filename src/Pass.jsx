@@ -6,9 +6,9 @@ function HI()
 {
   let [cal,setcal]=useState();
 
-  let[cal1,setc1]=useState('');
-  let[cal2,setc2]=useState();
-  let[cal3,setc3]=useState('');
+  let[cal1,setc1]=useState(null);
+  let[cal2,setc2]=useState(null);
+  let[cal3,setc3]=useState(null);
   let [ans,setans]=useState();
   let [def,setdef]=useState(0);
 
@@ -41,6 +41,7 @@ function HI()
 <div className='show'>
       <div className='w1' onClick={(e)=>{
         console.log("c",c2);
+        setcal(null);
         if(c2==false)
         {
           let rw="";
@@ -80,6 +81,8 @@ function HI()
       1
       </div>
       <div className='w2' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -124,6 +127,8 @@ function HI()
       2
       </div>
       <div className='w3' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -167,6 +172,8 @@ function HI()
       3
       </div>
       <div className='w4' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -211,6 +218,8 @@ function HI()
       4
       </div>
       <div className='w5' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -255,6 +264,8 @@ function HI()
       5
       </div>
       <div className='w6' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -299,6 +310,8 @@ function HI()
       6
       </div>
       <div className='w7' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -344,6 +357,8 @@ function HI()
       7
       </div>
       <div className='w8' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -388,6 +403,8 @@ function HI()
       8
       </div>
       <div className='w9' onClick={(e)=>{
+                setcal(null);
+
         if(c2==false)
         {
 
@@ -432,6 +449,8 @@ function HI()
       9
       </div>
       <div className='w0' onClick={(e)=>{
+                setcal(null);
+
          if(c2==false)
         {
           let rw="";
@@ -471,12 +490,16 @@ function HI()
       0
       </div>
       <div className='wp' onClick={()=>{
+                setcal(null);
+
         setc2("+");
         c2 = true;
       }}>
       +
       </div>
       <div className='wm1' onClick={()=>{
+                setcal(null);
+
         setc2("-");
         c2 = true;
         console.log("c2",c2);
@@ -484,12 +507,16 @@ function HI()
       -
       </div>
       <div className='wm2' onClick={()=>{
+                setcal(null);
+
         setc2("*");
         c2 = true;
       }}>
       *
       </div>
       <div className='wd' onClick={()=>{
+                setcal(null);
+
         setc2("/");
         c2 = true;
       }}>
@@ -503,7 +530,7 @@ function HI()
             let f = r1 + r2;
             setcal(`${f}`);
             setc1(null);
-            setc2("");
+            setc2(null);
             setc3(null);
             c2=false;
         }
@@ -512,7 +539,7 @@ function HI()
           let f = r1 - r2;
             setcal(`${f}`);
             setc1(null);
-            setc2("");
+            setc2(null);
             setc3(null);
             c2=false;
 
@@ -522,7 +549,7 @@ function HI()
           let f = r1 * r2;
             setcal(`${f}`);
             setc1(null);
-            setc2();
+            setc2(null);
             setc3(null);
             c2=false;
 
@@ -532,7 +559,7 @@ function HI()
           let f = r1 / r2;
             setcal(`${f}`);
             setc1(null);
-            setc2();
+            setc2(null);
             setc3(null);
             c2=false;
 
@@ -541,27 +568,45 @@ function HI()
       =
       </div>
       <div className='wde' onClick={()=>{
-        if(c2==false)
+        if(c2==false && cal1==null && cal3==null && cal2==null)
         {
+          console.log("1");
+          const newInputText = cal.slice(0, -1); // Remove the last character
+      setcal(newInputText);
+        }
+        else if(c2==false)
+        {
+          console.log("2");
+
         const newInputText = cal1.slice(0, -1); // Remove the last character
       setc1(newInputText);
         }
-        else if(c2==true && cal3=="")
-        {
-          setc2();
-          c2=false;
-        }
-        else{
+       
+        else if(c2==true){
+          console.log("4");
+
+if(cal3=="")
+{
+c2=false;
+setc2(null);
+}
+else
+{
           const newInputText = cal3.slice(0, -1); // Remove the last character
       setc3(newInputText);
+}
+      
         }
+        
+        
+        
       }}>
       Delete
       </div>
       <div className='wcl' onClick={()=>{
             setans(cal);
         setc1(null);
-            setc2();
+            setc2(null);
             setc3(null);
             setcal(null);
             c2=false;

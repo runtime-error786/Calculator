@@ -121,6 +121,12 @@ code {
   margin-left: 10px;
 }
 
+.w1:hover{
+background-color: yellow;
+color: black;
+
+}
+
 .w2{
   grid-area: e2;
   background-color:#e74c3c ;
@@ -133,6 +139,11 @@ code {
   margin-top: 15px;
   margin-left: 3px;
 }
+.w2:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w3{
   grid-area: e3;
   background-color:#e74c3c ;
@@ -145,6 +156,11 @@ code {
   margin-top: 15px;
   margin-left: 3px;
 }
+.w3:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w4{
   grid-area: e4;
   background-color:#e74c3c ;
@@ -157,6 +173,11 @@ code {
   margin-top: 3px;
   margin-left: 10px;
 }
+.w4:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w5{
   grid-area: e5;
   background-color:#e74c3c ;
@@ -169,6 +190,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.w5:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w6{
   grid-area: e6;
   background-color:#e74c3c ;
@@ -181,6 +207,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.w6:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w7{
   grid-area: e7;
   background-color:#e74c3c ;
@@ -193,6 +224,11 @@ code {
   margin-top: 3px;
   margin-left: 10px;
 }
+.w7:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w8{
   grid-area: e8;
   background-color:#e74c3c ;
@@ -206,6 +242,11 @@ code {
   margin-left: 3px;
 }
 
+.w8:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w9{
   grid-area: e9;
   background-color:#e74c3c ;
@@ -218,6 +259,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.w9:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .w0{
   grid-area: e0;
   background-color:#e74c3c ;
@@ -230,6 +276,11 @@ code {
   margin-top: 3px;
   margin-left: 10px;
 }
+.w0:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .wp{
   grid-area: ep;
   background-color:#e74c3c ;
@@ -242,6 +293,12 @@ code {
   margin-top: 15px;
   margin-left: 3px;
 }
+
+.wp:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .wm1{
   grid-area: em1;
   background-color:#e74c3c ;
@@ -254,6 +311,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.wm1:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .wm2{
   grid-area: em2;
   background-color:#e74c3c ;
@@ -266,6 +328,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.wm2:hover{
+  background-color: yellow;
+  color: black;
+
+  }
 .wd{
   grid-area: ed;
   background-color:#e74c3c ;
@@ -278,7 +345,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.we:hover{
+  background-color: yellow;
+  color: black;
 
+  }
 .we{
   grid-area: ee;
   background-color:#e74c3c ;
@@ -291,7 +362,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.we:hover{
+  background-color: yellow;
+  color: black;
 
+  }
 .wde{
   grid-area: de;
   background-color:#e74c3c ;
@@ -304,7 +379,11 @@ code {
   margin-top: 3px;
   margin-left: 10px;
 }
+.wde:hover{
+  background-color: yellow;
+  color: black;
 
+  }
 .wcl{
   grid-area: cl;
   background-color:#e74c3c ;
@@ -317,7 +396,11 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
+.wcl:hover{
+  background-color: yellow;
+  color: black;
 
+  }
 .wan{
   grid-area: an;
   background-color:#e74c3c ;
@@ -330,7 +413,10 @@ code {
   margin-top: 3px;
   margin-left: 3px;
 }
-
+.wan:hover{
+  background-color: yellow;
+  color: black;
+  }
 .y1{
   font-size: xx-large;
   font-weight: bolder;
